@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_left">
+        <div class="header_logo">
+          <img src="/img/icons/home.svg" alt="Home" />
+          <img src="/img/imgs/logo.png" alt="Logo" />
+        </div>
+        <nav class="header_nav">
+          <div class="header_nav_item">
+            Рабочие пространства <img src="/img/icons/more.svg" alt="More" />
+          </div>
+          <div class="header_nav_item">
+            Недавние <img src="/img/icons/more.svg" alt="More" />
+          </div>
+          <div class="header_nav_item">
+            В избранном <img src="/img/icons/more.svg" alt="More" />
+          </div>
+          <div class="header_nav_item">
+            Шаблоны <img src="/img/icons/more.svg" alt="More" />
+          </div>
+          <button class="header_create_btn">Создать</button>
+        </nav>
+      </div>
+      <div class="header_right">
+        <div class="header_search">
+          <input type="text" placeholder="Поиск" />
+        </div>
+        <div class="header_icons">
+          <button class="header_icon notification"></button>
+          <button class="header_icon support"></button>
+          <button class="header_icon profile"></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="board">
+      <aside class="board_sidebar">
+        <div class="workspace-info">
+          <img
+            src="/img/imgs/prodigy.svg"
+            class="workspace-logo"
+            alt="Workspace Logo"
+          />
+          <div class="workspace-details">
+            <div class="workspace-title">PRODIGY: рабочее пространство</div>
+            <div class="workspace-status">Бесплатно</div>
+          </div>
+          <img src="/img/icons/left.svg" class="workspace-menu" alt="Menu" />
+        </div>
+
+        <nav class="menu">
+          <div class="menu_item">
+            <div class="menu-icon">
+              <img src="/img/icons/sidebar_board.svg" alt="Board" />
+            </div>
+            <div class="menu-text">Доски</div>
+          </div>
+          <div class="menu_with_plus">
+            <div class="menu_item">
+              <div class="menu-icon">
+                <img src="/img/icons/sidebar_members.svg" alt="Members" />
+              </div>
+              <div class="menu-text">Участники</div>
+            </div>
+            <button class="menu-add">
+              <img src="/img/icons/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="menu_with_plus">
+            <div class="menu_item">
+              <div class="menu-icon">
+                <img src="/img/icons/sidebar_settings.svg" alt="Settings" />
+              </div>
+              <div class="menu-text">Настройки рабочего пространства</div>
+            </div>
+            <a href="#" class="menu-arrow"
+              ><img src="/img/icons/more.svg" alt="More"
+            /></a>
+          </div>
+          <div class="dropdown_content">
+            <div class="dropdown_item">Режимы просмотра рабочего...</div>
+            <div class="menu_item">
+              <div class="menu-icon">
+                <img src="/img/icons/table.svg" alt="Table" />
+              </div>
+              <div class="menu-text italic">Таблица</div>
+            </div>
+            <div class="menu_item">
+              <div class="menu-icon">
+                <img src="/img/icons/calendar.svg" alt="Calendar" />
+              </div>
+              <div class="menu-text italic">Календарь</div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="my-boards">
+          <div class="boards_title">
+            <div class="dropdown_item">Мои доски</div>
+            <a class="menu-add">
+              <img src="/img/icons/plus.svg" alt="" />
+            </a>
+          </div>
+          <div class="menu_item">
+            <div class="board-color"></div>
+            <div class="menu-text">desk</div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="board_content">
+        <div class="board_header">
+          <div class="board_header_left">
+            <h1>desk</h1>
+            <img src="/img/icons/star.svg" alt="" />
+            <img src="/img/icons/users.svg" alt="" />
+            <div>
+              <button class="onboard">
+                <img src="/img/icons/board.svg" alt="" />По доске
+              </button>
+              <a href="#"><img src="/img/icons/more.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="board_header_right">
+            <div class="board_header_right_left">
+              <img src="/img/icons/rocket.svg" alt="" />
+              <img src="/img/icons/flash.svg" alt="" />
+              <div class="filters">
+                <img src="/img/icons/filter.svg" alt="" />
+                Фильтры
+              </div>
+            </div>
+
+            <div class="board_header_right_right">
+              <img src="/img/imgs/profile.png" alt="" />
+              <button class="onboard">
+                <img src="/img/icons/send.svg" alt="" /> Поделиться
+              </button>
+              <img src="/img/icons/additional.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="board_columns">
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
