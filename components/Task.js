@@ -4,7 +4,6 @@ export function Task(item) {
   const task_title = document.createElement("h2");
   const additional_icon = document.createElement("button");
   const card = document.createElement("div");
-  const add_card_btn = document.createElement("button");
 
   task.draggable = true;
   task.classList.add("task");
@@ -12,13 +11,11 @@ export function Task(item) {
   task_title.classList.add("task_title");
   additional_icon.classList.add("additional_icon");
   card.classList.add("card");
-  add_card_btn.classList.add("add_card_btn");
 
   task_title.innerHTML = item.title;
-  add_card_btn.innerHTML = "+ Добавить карточку";
   card.innerHTML = item.description;
 
-  task.append(task_header, card, add_card_btn);
+  task.append(task_header, card);
   task_header.append(task_title, additional_icon);
 
   task.ondragstart = (e) => {

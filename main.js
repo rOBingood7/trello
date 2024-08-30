@@ -1,5 +1,6 @@
 import { Column } from "./components/Column";
 import { Task } from "./components/Task";
+import { getData } from "./lib/http.request";
 import { reload } from "./lib/utils";
 
 const tasks = [
@@ -37,5 +38,6 @@ const columns = [
 
 const board_columns = document.querySelector(".board_columns");
 reload(columns, Column, [board_columns], true);
-const cols = document.querySelectorAll(".column");
+
+const cols = document.querySelectorAll(".tasks");
 reload(tasks, Task, cols);
