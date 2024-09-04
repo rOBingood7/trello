@@ -1,36 +1,5 @@
 {
-  "tasks": [
-    {
-      "id": "1",
-      "title": "Buy a car",
-      "description": "lorem ipsum",
-      "status": 1
-    },
-    {
-      "id": "2",
-      "title": "Buy milk",
-      "description": "lorem ipsum dolor sir amet",
-      "status": "1"
-    },
-    {
-      "id": "478f0ff7-95d2-46c7-b2a5-54c3343c6f21",
-      "title": "hello world",
-      "description": "worrl",
-      "status": 0
-    },
-    {
-      "id": "0c6b23fc-1eb8-44bb-8469-6ca3be949528",
-      "title": "hello world",
-      "description": "worrl",
-      "status": "2"
-    },
-    {
-      "id": "0eeed5a4-183b-441e-9127-d2366da56f3d",
-      "title": "bye bye",
-      "description": "1234",
-      "status": "1"
-    }
-  ],
+  "tasks": [],
   "columns": [
     {
       "id": "1",

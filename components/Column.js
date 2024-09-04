@@ -21,7 +21,6 @@ export function Column(item) {
     const selected = document.getElementById("active");
     tasks.append(selected);
     selected.removeAttribute("id");
-    // PATCH писать здесь КОД
     await patchData("/tasks/" + selected.dataset.id, { status: item.status });
   };
 
