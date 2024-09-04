@@ -6,6 +6,7 @@ export function Task(item) {
   const card = document.createElement("div");
 
   task.draggable = true;
+  task.setAttribute("data-id", item.id);
   task.classList.add("task");
   task_header.classList.add("task_header");
   task_title.classList.add("task_title");
@@ -18,13 +19,13 @@ export function Task(item) {
   task.append(task_header, card);
   task_header.append(task_title, additional_icon);
 
-  task.ondragstart = (e) => {
+  task.ondragstart = () => {
     setTimeout(() => {
       task.classList.add("hide");
     }, 0);
     task.id = "active";
   };
-  task.ondragend = (e) => {
+  task.ondragend = () => {
     task.classList.remove("hide");
   };
 

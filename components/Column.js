@@ -1,3 +1,5 @@
+import { patchData } from "../lib/http.request";
+
 export function Column(item) {
   const column = document.createElement("div");
   const tasks = document.createElement("div");
@@ -15,28 +17,19 @@ export function Column(item) {
   column.ondragenter = (e) => {};
   column.ondragover = (e) => e.preventDefault();
   column.ondragleave = (e) => {};
-  column.ondrop = (e) => {
+  column.ondrop = async (e) => {
     const selected = document.getElementById("active");
     tasks.append(selected);
     selected.removeAttribute("id");
+    // PATCH писать здесь КОД
+    await patchData("/tasks/" + selected.dataset.id, { status: item.status });
   };
-
-  const modal = document.getElementById("taskModal");
-  const closeBtn = modal.querySelector(".close");
-  const form = document.querySelector("form");
 
   add_card_btn.onclick = () => {
-    modal.style.display = "block";
+    const dialog = document.querySelector("dialog");
+
+    dialog.showModal();
   };
 
-  closeBtn.onclick = () => {
-    modal.style.display = "none";
-  };
-
-  form.onsubmit = (e) => {
-    e.preventDefault();
-
-    modal.style.display = "none";
-  };
   return column;
 }
