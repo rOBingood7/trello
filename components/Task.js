@@ -38,12 +38,11 @@ export function Task(item) {
 
   trash.ondrop = async (e) => {
     const selected = document.getElementById("active");
-    await deleteData("/tasks/" + selected.dataset.id, task);
     selected.remove();
+    await deleteData("/tasks/" + selected.dataset.id, task);
   };
   trash.ondragover = (e) => {
     e.preventDefault();
   };
-
   return task;
 }

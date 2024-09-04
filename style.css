@@ -295,7 +295,7 @@ header {
 }
 .column {
   width: 100%;
-  min-height: 300px;
+  min-height: 310px;
   height: fit-content;
   background-color: #101204;
   padding: 15px 20px;

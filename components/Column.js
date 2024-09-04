@@ -5,7 +5,9 @@ export function Column(item) {
   const tasks = document.createElement("div");
   const span = document.createElement("span");
   const add_card_btn = document.createElement("button");
+  const additional_icon = document.createElement("button");
 
+  additional_icon.classList.add("additional_icon");
   column.classList.add("column");
   span.innerHTML = item.title;
   tasks.classList.add("tasks");
